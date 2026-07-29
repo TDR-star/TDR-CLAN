@@ -436,6 +436,91 @@ padding:0 20px;
 
 display:none;
 
+/* =========================
+   KING CINEMATIC GLOW
+========================= */
+
+
+.logo{
+
+font-size:100px;
+
+filter:
+drop-shadow(0 0 10px gold)
+drop-shadow(0 0 25px gold)
+drop-shadow(0 0 50px #ffae00);
+
+animation:
+crownGlow 2s infinite alternate;
+
+}
+
+
+@keyframes crownGlow{
+
+from{
+
+filter:
+drop-shadow(0 0 10px gold)
+drop-shadow(0 0 20px gold);
+
+transform:scale(1);
+
+}
+
+
+to{
+
+filter:
+drop-shadow(0 0 30px gold)
+drop-shadow(0 0 70px #ffae00);
+
+transform:scale(1.08);
+
+}
+
+}
+
+
+
+.hero h1{
+
+text-shadow:
+
+0 0 10px gold,
+0 0 25px gold,
+0 0 50px #ffae00;
+
+animation:
+textGlow 3s infinite alternate;
+
+}
+
+
+@keyframes textGlow{
+
+
+from{
+
+text-shadow:
+
+0 0 10px gold,
+0 0 20px gold;
+
+}
+
+
+to{
+
+text-shadow:
+
+0 0 30px gold,
+0 0 80px #ffae00;
+
+}
+
+}
+
 }
 
 }
