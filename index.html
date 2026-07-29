@@ -8,19 +8,89 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  .hero{
+  
+.hero{
+
 height:100vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 text-align:center;
+
+
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
-url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&auto=format&fit=crop");
+
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.90)
+),
+
+url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&auto=format&fit=crop");
+
+
 background-size:cover;
+
 background-position:center;
+
+
+position:relative;
+
+overflow:hidden;
+
 }
 
+
+
+/* لایه نور سینمایی */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+
+background:
+
+radial-gradient(
+circle,
+rgba(255,215,0,.18),
+transparent 45%
+);
+
+
+animation:
+
+cinematicLight 5s infinite alternate;
+
+}
+
+
+
+@keyframes cinematicLight{
+
+
+from{
+
+opacity:.4;
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+
+}
 .hero-box{
 background:rgba(0,0,0,.45);
 padding:40px;
