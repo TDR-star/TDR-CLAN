@@ -442,6 +442,46 @@ display:none;
 
 }
 </style>
+  
+</head>
+
+<body>
+  <nav class="navbar">
+  
+<div class="nav-logo">
+👑 KING
+</div>
+
+<div class="nav-links">
+
+<a href="#">HOME</a>
+<a href="#">CLAN</a>
+<a href="#">LEADER</a>
+<a href="#">JOIN</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+  <div class="hero-box">
+    <div class="logo">👑</div>
+
+    <h1>KING</h1>
+
+    <div class="tag">♛𝐊𝐈𝐍𝐆༻</div>
+
+    <div class="info">
+      🎮 Open Battle<br>
+      👑 Leader: @Me_hr_as_merto<br>
+      📢 Channel: @OPENBATEL_KING<br>
+      👥 Members: 1K+
+    </div>
+
+    <a class="btn" href="#">JOIN KING</a>
+  </div>
+</section>
+  
 <section class="section">
 
 <h2 class="title">KING INFORMATION</h2>
@@ -481,40 +521,29 @@ Members: 1K+
 KING CLAN © 2026
 </footer>
   
-<body><nav class="navbar">
+<script>
 
-<div class="nav-logo">
-👑 KING
-</div>
+const particles = document.querySelector(".particles");
 
-<div class="nav-links">
+for(let i = 0; i < 60; i++){
 
-<a href="#">HOME</a>
-<a href="#">CLAN</a>
-<a href="#">LEADER</a>
-<a href="#">JOIN</a>
+    let particle = document.createElement("div");
 
-</div>
+    particle.className = "particle";
 
-</nav>
-<section class="hero">
-  <div class="hero-box">
-    <div class="logo">👑</div>
+    particle.style.left = Math.random() * 100 + "%";
 
-    <h1>KING</h1>
+    particle.style.animationDuration =
+    (Math.random() * 5 + 5) + "s";
 
-    <div class="tag">♛𝐊𝐈𝐍𝐆༻</div>
+    particle.style.animationDelay =
+    Math.random() * 5 + "s";
 
-    <div class="info">
-      🎮 Open Battle<br>
-      👑 Leader: @Me_hr_as_merto<br>
-      📢 Channel: @OPENBATEL_KING<br>
-      👥 Members: 1K+
-    </div>
+    particles.appendChild(particle);
 
-    <a class="btn" href="#">JOIN KING</a>
-  </div>
-</section>
+}
+
+</script>
+
 </body>
-
 </html>
