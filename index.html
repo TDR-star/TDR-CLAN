@@ -922,7 +922,52 @@ animation:
 crownEntrance 2s ease forwards,
 crownGlow 3s infinite ease-in-out 2s !important;
 }
+/* تاج سلطنتی سه بعدی */
 
+.logo svg{
+
+filter:
+drop-shadow(0 0 8px #fff2a8)
+drop-shadow(0 0 25px #FFD700)
+drop-shadow(0 0 50px #ff9900);
+
+animation:
+royalCrown 4s ease-in-out infinite;
+
+transform-origin:center;
+
+}
+
+
+@keyframes royalCrown{
+
+0%,100%{
+
+transform:
+translateY(0)
+rotateY(0deg);
+
+}
+
+
+50%{
+
+transform:
+translateY(-8px)
+rotateY(15deg);
+
+}
+
+}
+
+
+/* درخشش روی خود تاج */
+
+.logo svg path{
+
+stroke-width:7;
+
+  }
 </style>
   
 </head>
