@@ -968,6 +968,68 @@ rotateY(15deg);
 stroke-width:7;
 
   }
+  /* =========================
+ROYAL GOLDEN FLAME AURA
+========================= */
+
+.logo::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+height:220px;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+background:
+radial-gradient(
+circle,
+rgba(255,215,0,.5),
+rgba(255,170,0,.25) 35%,
+transparent 70%
+);
+
+border-radius:50%;
+
+filter:blur(25px);
+
+z-index:-2;
+
+animation:
+goldFlame 4s ease-in-out infinite;
+
+}
+
+
+@keyframes goldFlame{
+
+0%,100%{
+
+opacity:.5;
+
+transform:
+translate(-50%,-50%)
+scale(.9);
+
+}
+
+
+50%{
+
+opacity:1;
+
+transform:
+translate(-50%,-50%)
+scale(1.15);
+
+}
+
+}
 </style>
   
 </head>
@@ -992,37 +1054,82 @@ stroke-width:7;
 
 <section class="hero">
   <div class="hero-box">
-<div class="logo">
-
-<svg viewBox="0 0 200 160" width="150" height="120">
+    <div class="logo">
+<svg viewBox="0 0 300 220" width="170" height="130">
 
 <defs>
-<linearGradient id="gold">
-<stop offset="0%" stop-color="#fff2a8"/>
-<stop offset="40%" stop-color="#FFD700"/>
-<stop offset="100%" stop-color="#ff9900"/>
+
+<linearGradient id="royalGold" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#fff7b0"/>
+<stop offset="25%" stop-color="#FFD700"/>
+<stop offset="70%" stop-color="#d88a00"/>
+<stop offset="100%" stop-color="#8a5200"/>
 </linearGradient>
+
+<linearGradient id="gem">
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="40%" stop-color="#00eaff"/>
+<stop offset="100%" stop-color="#0066ff"/>
+</linearGradient>
+
 </defs>
 
-<path 
-d="M20 35 L55 70 L80 25 L100 70 L125 25 L150 70 L180 35 L160 120 H40 Z"
-fill="url(#gold)"
-stroke="#FFD700"
-stroke-width="5"/>
 
-<circle cx="55" cy="70" r="8" fill="#fff"/>
-<circle cx="100" cy="70" r="8" fill="#fff"/>
-<circle cx="145" cy="70" r="8" fill="#fff"/>
+<!-- بدنه تاج -->
 
-<path 
-d="M40 120 H160"
+<path
+d="
+M35 55
+L80 100
+L120 35
+L150 100
+L190 35
+L230 100
+L265 55
+L245 170
+H55
+Z"
+fill="url(#royalGold)"
 stroke="#fff2a8"
 stroke-width="8"/>
 
+
+<!-- نوار پایین تاج -->
+
+<path
+d="M55 170 H245"
+stroke="#fff7b0"
+stroke-width="18"
+stroke-linecap="round"/>
+
+
+<!-- نگین‌ها -->
+
+<circle cx="80" cy="110" r="12" fill="url(#gem)"/>
+
+<circle cx="150" cy="105" r="15" fill="url(#gem)"/>
+
+<circle cx="220" cy="110" r="12" fill="url(#gem)"/>
+
+
+<!-- ستاره وسط -->
+
+<path
+d="
+M150 45
+L158 70
+L185 70
+L163 86
+L172 112
+L150 96
+L128 112
+L137 86
+L115 70
+L142 70 Z"
+fill="#fff2a8"/>
+
 </svg>
-
-</div>
-
+  </div>
     <h1>KING</h1>
 
     <div class="tag">♛𝐊𝐈𝐍𝐆༻</div>
