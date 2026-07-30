@@ -367,7 +367,6 @@ rotate(25deg);
 
 /* انیمیشن ورود */
 
-.hero-box,
 .card{
 
 animation:
@@ -665,7 +664,472 @@ transparent 70%
 
 z-index:-1;
 
+/* =========================
+KING 3D ENTRANCE ANIMATION
+========================= */
 
+
+.hero-box{
+
+perspective:1000px;
+
+animation:
+kingEntrance 1.8s cubic-bezier(.17,.67,.35,1.3) forwards;
+
+opacity:0;
+
+}
+
+
+
+.logo{
+
+animation:
+crownEntrance 2s ease-out forwards,
+crownGlow 3s infinite ease-in-out 2s;
+
+opacity:0;
+
+}
+
+
+
+.hero h1{
+
+animation:
+titleEntrance 1.8s ease-out .5s forwards;
+
+opacity:0;
+
+}
+
+
+
+.tag{
+
+animation:
+fadeEntrance 1.5s ease-out 1s forwards;
+
+opacity:0;
+
+}
+
+
+
+.info{
+
+animation:
+fadeEntrance 1.5s ease-out 1.3s forwards;
+
+opacity:0;
+
+}
+
+
+
+.btn{
+
+animation:
+buttonEntrance 1.5s ease-out 1.6s forwards;
+
+opacity:0;
+
+}
+
+
+
+/* ورود کل پنل */
+
+@keyframes kingEntrance{
+
+
+0%{
+
+opacity:0;
+
+transform:
+
+translateY(120px)
+rotateX(45deg)
+scale(.7);
+
+filter:blur(15px);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+
+translateY(0)
+rotateX(0)
+scale(1);
+
+filter:blur(0);
+
+}
+
+}
+
+
+
+/* ورود تاج */
+
+@keyframes crownEntrance{
+
+
+0%{
+
+opacity:0;
+
+transform:
+
+translateY(-120px)
+rotateY(180deg)
+scale(.2);
+
+}
+
+
+70%{
+
+transform:
+
+translateY(15px)
+rotateY(0)
+scale(1.15);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+
+translateY(0)
+scale(1);
+
+}
+
+}
+
+
+
+/* ورود نوشته */
+
+@keyframes titleEntrance{
+
+
+0%{
+
+opacity:0;
+
+transform:
+
+translateZ(-300px)
+scale(.3);
+
+letter-spacing:40px;
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+
+translateZ(0)
+scale(1);
+
+letter-spacing:6px;
+
+}
+
+}
+
+
+
+/* متن‌ها */
+
+@keyframes fadeEntrance{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+translateY(0);
+
+}
+
+}
+
+
+
+/* دکمه */
+
+@keyframes buttonEntrance{
+
+
+0%{
+
+opacity:0;
+
+transform:
+
+scale(.3)
+rotateX(90deg);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+
+scale(1)
+rotateX(0);
+
+}
+
+            }
+  /* =========================
+KING 3D ENTRANCE
+========================= */
+
+
+.hero-box{
+
+perspective:1000px;
+
+animation:
+kingEntrance 1.8s ease forwards;
+
+opacity:0;
+
+}
+
+
+
+.logo{
+
+animation:
+crownEntrance 2s ease forwards;
+
+opacity:0;
+
+}
+
+
+
+.hero h1{
+
+animation:
+titleEntrance 1.8s ease .5s forwards;
+
+opacity:0;
+
+}
+
+
+
+.tag{
+
+animation:
+fadeEntrance 1.5s ease 1s forwards;
+
+opacity:0;
+
+}
+
+
+
+.info{
+
+animation:
+fadeEntrance 1.5s ease 1.3s forwards;
+
+opacity:0;
+
+}
+
+
+
+.btn{
+
+animation:
+buttonEntrance 1.5s ease 1.6s forwards;
+
+opacity:0;
+
+}
+
+
+
+/* ورود باکس */
+
+@keyframes kingEntrance{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(100px)
+rotateX(40deg)
+scale(.7);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+translateY(0)
+rotateX(0)
+scale(1);
+
+}
+
+}
+
+
+
+/* ورود تاج */
+
+@keyframes crownEntrance{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(-100px)
+rotateY(180deg)
+scale(.2);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+translateY(0)
+rotateY(0)
+scale(1);
+
+}
+
+}
+
+
+
+/* ورود KING */
+
+@keyframes titleEntrance{
+
+0%{
+
+opacity:0;
+
+transform:
+translateZ(-300px)
+scale(.4);
+
+}
+
+
+100%{
+
+opacity:1;
+
+transform:
+translateZ(0)
+scale(1);
+
+}
+
+}
+
+
+
+/* متن‌های پایین */
+
+@keyframes fadeEntrance{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+
+
+/* دکمه */
+
+@keyframes buttonEntrance{
+
+from{
+
+opacity:0;
+
+transform:
+scale(.3);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+scale(1);
+
+}
+
+  }
 }
 </style>
   
